@@ -9,7 +9,7 @@ do
 done
 
 for pythonfile in 'ls *.py'
-  lines = wc -l $pythonfile
+  lines = 'wc -l $pythonfile'
   if [ $lines -gt 9 ]; then
     mv $pythonfile long_$pythonfile
   else
